@@ -1,6 +1,9 @@
 # Fictional Stars Builder - for UE5 Celestial Vault Plugin
 #  架空の星座ビルダー　yossi40-100 改造版
 
+使い方： https://yossi40-100.com/ue5star_builder/
+
+
 下記で公開されている作業のうちUE取り込み前の3パートを、ワンツール化したものです。
 https://dev.epicgames.com/community/learning/tutorials/9XyB/unreal-engine-creating-custom-constellations-for-the-celestial-vault-plugin
 
@@ -41,6 +44,18 @@ Pythonをインストールします See https://www.python.org/downloads/ (PATH
 4. 表示モードをfinalImageに変更します
 
 5. 左のメニュー下部にて星座の天球上の配置を調整します
+
+ - Center RA/Center DEC 星座の中心位置
+ - Size RA/Size DEC 星座の大きさ
+ - Rotation Angle 星座の角度
+
+6. 右上の “Export CSV” ボタンから、計算結果を出力します
+
+7. UnrealEngineに「StarInputData」型のDataTableアセットとして取り込みます
+  オプションのチェックはすべてつけて、KeyFieldは「ID」とします
+
+8. CelestialVaultDaySequenceアクターの詳細欄でFictional Star Catalogに登録します
+
 
 ## 表示モード
 
